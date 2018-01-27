@@ -1,0 +1,1 @@
+Recreation of the google home page (https://www.google.com/) and validating whether some text has been typed into the search box or not!

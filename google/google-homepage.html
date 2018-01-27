@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+		<title>Google</title>
+		<script>
+			function validateForm() {
+				var x = document.forms["google"]["SearchText"].value;
+				if (x == "") {
+					alert("Please type something in the search box!");
+					return false;
+				}else
+				alert(x)
+			} 
+		</script>
+	</head>
+	<body>
+		<header>
+			<a href="https://mail.google.com">Gmail</a>
+			<a href="https://www.google.com/imghp?hl=en&tab=wi&ei=Ox1NVMXuJYO3yATCjoFA&ved=0CAQQqi4oAg">Images</a>
+			<img id="products" src="products.png"/>
+			<img id="bell" src="bellicon.png"/>
+			<a href="#" style="border: 1px solid #4285f4;font-weight: bold;outline: none;background: #4285f4;color: #fff;padding: 8px;border-radius: 5px; text-decoration:none;">Sign in</a>
+		</header>
+		<div>
+			<img src="googlelogo.png"/>
+			<form name="google" action="#" onsubmit="return validateForm()" method="POST"><br>
+				<input type="search" name = "SearchText" class="search"><br>
+				<input type="submit" class="button" name="submit" value="Google Search">
+				<input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
+			</form>
+		</div>
+		<div class = "bottom">
+			<a class="country" href="#">Uganda</a>
+		</div>
+		<footer>
+			<a class="leftlinks" href="#">Advertising</a>
+			<a class="leftlinks" href="#">Business</a>
+			<a class="leftlinkstop" href="#">About</a>
+			<a class="leftlinkstop" href="#">Store</a>
+			<a class="rightlinks" href="#">Settings</a>
+			<a class="rightlinks" href="#">Terms</a>
+			<a class="rightlinks" href="#">Privacy</a>
+			
+		</footer>
+	</body>
+</html>
+
+    
